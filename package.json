@@ -1,0 +1,12 @@
+{
+  "name": "alarm-detector",
+  "version": "0.0.1",
+  "description": "Alarm detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "stream-splitter": "^0.3.2"
+  }
+}
