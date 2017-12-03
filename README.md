@@ -31,9 +31,28 @@ Download the executable from [here](http://www.gewang.com/software/sndpeek/).
 
 See the [examples](https://github.com/oflisback/tone-detector/tree/master/examples) directory for two examples. One to report all detected tones and one to detect a specific tone.
 
-Use the reporter to identify the characteristics of a tone you want to detect, then use that information to configure a detector to detect that specific tone.
+After cloning this repository and running:
 
-The start function takes a config object:
+```
+npm install
+```
+
+The examples can be executed through:
+
+```
+npm run report
+```
+
+and
+
+```
+npm run detect
+```
+
+
+Use report to identify the characteristics of a tone you want to detect, then use that information to configure detect to detect that specific tone.
+
+Detection is started by calling the start function which takes an optional config object as parameter:
 
 ```
 {
@@ -42,6 +61,16 @@ The start function takes a config object:
   maxToneCentroidOffset // maximum difference between detected tone and target tone to still consider it a match (default: 2)
   targetToneCentroid: // Target tone (default: undefined)
 }
+```
+
+Here's a minimal usage example where the config object is omitted:
+
+```
+const detector = require('tone-detector');
+
+detector.on('event', e => console.log(e));
+
+detector.start();
 ```
 
 # License

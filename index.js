@@ -49,9 +49,9 @@ module.exports.start = c => {
     }
     if (config.targetToneCentroid &&
       Math.abs(value.centroid - config.targetToneCentroid) < config.maxToneCentroidOffset) {
-      module.exports.emit('report', value);
+      module.exports.emit('event', value);
     } else {
-      module.exports.emit('report', value);
+      module.exports.emit('event', value);
     }
   });
 };

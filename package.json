@@ -1,6 +1,6 @@
 {
   "name": "tone-detector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tone detector",
   "email": "ola.flisback@gmail.com",
   "main": "index.js",

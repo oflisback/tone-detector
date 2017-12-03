@@ -1,6 +1,6 @@
 const listener = require('../');
 
-listener.on('report', tone => {
+listener.on('event', tone => {
   console.log(`Target tone detected! [Centroid RolloffLow RolloffHigh]: [${tone.centroid} ${tone.rolloffLow} ${tone.rolloffHigh}]`);
 });
 
